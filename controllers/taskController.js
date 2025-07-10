@@ -33,7 +33,7 @@ export const updateTask = async (req,res) =>{
           req.body,
           { new: true }
         );
-        if (!task) return res.status(404).json({ message: 'Task successfully updated' });
+        if (!task) return res.status(201).json({ message: 'Task successfully updated' });
         res.json(task);
       }
       catch(err){
@@ -41,19 +41,23 @@ export const updateTask = async (req,res) =>{
     }
 };
 
-export const deleteTask = async(req,res) =>{
-
+export const deleteTask = async (req, res) => {
     try {
-        const task = await Task.findOneAndDelete(
-          { _id: req.params.id, userId: req.user.id },
-          req.body,
-          
-        );
-        if (!task) return res.status(404).json({ message: 'Task successfully deleted' });
-        res.json(task);
+      const task = await Task.findOneAndDelete({
+        _id: req.params.id,
+        userId: req.user.id
+      });
+  
+      if (!task) {
+        return res.status(404).json({ message: "Task not found" });
       }
-      catch(err){
-        res.status(500).json({message: err.message})
+  
+      res.json({
+        message: "Task successfully deleted",
+        task: task
+      });
+    } catch (err) {
+      res.status(500).json({ message: err.message });
     }
-
-}
+  };
+  
