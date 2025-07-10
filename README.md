@@ -125,7 +125,7 @@ This project is open source for learning and demonstration purposes.
 Here’s proof of the working API tested with Thunder Client in VS Code.
 
 ### ✅ Register User
-![Register](https://github.com/VACKOM/auth-api/blob/main/scrennshots/create-task.png)
+![Register](https://github.com/VACKOM/auth-api/blob/main/screenshots/create-task.png)
 
 ### ✅ Login User
 ![Login](https://github.com/VACKOM/auth-api/blob/main/screenshots/login.png)
