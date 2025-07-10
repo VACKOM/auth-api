@@ -120,6 +120,30 @@ This project is open source for learning and demonstration purposes.
     }
 
 
+    ## 📸 Thunder Client Test Results
+
+Here’s proof of the working API tested with Thunder Client in VS Code.
+
+### ✅ Register User
+![Register](https://github.com/VACKOM/auth-api/blob/main/scrennshots/create-task.png)
+
+### ✅ Login User
+![Login](https://github.com/VACKOM/auth-api/blob/main/screenshots/login.png)
+
+### ✅ Create Task
+![Create Task](https://github.com/VACKOM/auth-api/blob/main/screenshots/create-task.png)
+
+### ✅ Get Tasks
+![Get Tasks](https://github.com/VACKOM/auth-api/blob/main/screenshots/get-tasks.png)
+
+### ✅ Update Task
+![Update Task](https://github.com/VACKOM/auth-api/blob/main/screenshots/update-task.png)
+
+### ✅ Delete Task
+![Delete Task](https://github.com/VACKOM/auth-api/blob/main/screenshots/delete-task.png)
+
+
+
 
 
 
