@@ -51,7 +51,7 @@ AUTH-API/
 ⚙️ Installation
 
 1. Clone the repo
-git clone https://github.com/yourusername/auth-api.git
+git clone https://github.com/vackom/auth-api.git
 cd auth-api
 
 2. Install dependencies
